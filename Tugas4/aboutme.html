@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="../jquery.js"></script>
+    <script type="text/javascript" src="script3.js"></script> <!-- Fixed closing tag -->
+    <style>
+        /* Load Mistral from a local file */
+        @font-face {
+            font-family: 'Mistral';
+            src: url('fonts/Mistral.ttf') format('truetype'); /* Adjust the path as necessary */
+        }
+
+        body{
+            font-family: sans-serif;
+        }
+
+        h1 {
+            font-family: 'Mistral', cursive;
+            color: #ff0000; /* Corrected: Text color */
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            background-color: #ccc; /* Placeholder background */
+        }
+
+        /* Button style */
+        #tombol {
+            background-color: rgb(255, 0, 0); /* Blue color like in the image */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Mistral', cursive; /* Apply Mistral font to button */
+        }
+
+        /* Modal box style */
+        #modal-box {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            display: none; /* Add shadow for depth */
+            z-index: 1002;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Info box text */
+        #modal {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        #close-button {
+            background-color: crimson;
+            color: white;
+            padding: 5px;
+            border: 1px solid crimson;
+            float: right;
+            border-radius: 3px;
+            cursor: pointer; /* Add pointer cursor for UX */
+        }
+
+        #background{
+            background-color: black;
+            opacity: 0.7;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1001;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="text-center">
+            <h1 class="mb-4">About Me</h1>
+            <!-- Profile Picture -->
+            <img src="CSC.png" alt="Profile Picture" class="profile-pic mb-4">
+            <br><br><br>
+            <!-- Button with Mistral font -->
+            <button id="tombol">Information about me</button>
+            <div id="background"></div>
+            <br><br><br>
+            <!-- Modal box styled like the example -->
+            <div id="modal-box">
+                <div id="close-button">X</div> <!-- Close button inside modal -->
+                <div id="modal">
+                    My name is Akhyar Khairansyah, I am a student at SMKN Negeri 1 Cianjur, currently a 12th Grader in XII PPLG GIM 1 Class.
+                    My Hobby is Cycling, I also like to play games, I like to play games like War Thunder, Wolfenstein and HSR
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (Optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+ 

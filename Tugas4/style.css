@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #4b2981;
+    color: #fff;
+    font-family:  "Squealer", sans-serif;
+}
+
+.navbar {
+    width: 700px;
+    margin: auto;
+    padding: 8px;
+    background-color: #f4dca5;
+    border-radius: 6px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    position: relative; /* Add this for dropdown positioning */
+    padding: 0px 10px;
+    width: 100px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.navbar ul li a {
+    color: #da3c72;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.navbar ul li ul {
+    position: absolute;
+    left: 0;
+    top: 40px; /* Position dropdown below the menu item */
+    width: 150px;
+    display: none; /* Initially hidden */
+    background-color: #f4dca5;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 0; /* Remove padding */
+}
+
+.navbar ul li ul li {
+    display: block;
+    text-align: left; /* Align dropdown items */
+}
+
+.navbar ul li ul li a {
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    color: #da3c72;
+}
